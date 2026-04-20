@@ -6,6 +6,8 @@ public class Subscribers extends Passenger{
         super(name , id);
     }
 
+    public Subscribers() {
+    }
 
     @Override
     public void passengerReservation(Car car) throws Exception {
@@ -27,4 +29,6 @@ public class Subscribers extends Passenger{
         System.out.println("Discount 50%");
         System.out.println();
     }
+
+
 }

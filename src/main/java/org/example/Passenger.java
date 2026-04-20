@@ -6,6 +6,10 @@ public abstract class Passenger {
     private Car reservedCar;
     private double tripCost;
 
+
+    public Passenger() {
+    }
+
     public Passenger(String name, String id) {
         this.name = name;
         this.id = id;
