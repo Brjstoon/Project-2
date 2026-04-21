@@ -62,13 +62,13 @@ public class Main {
 
 
 
-        for (int i=0;i< routes.length;i++){
-            System.out.println(routes[i]);
+        for (int i=1;i< routes.length+1;i++){
+            System.out.println(i + ". " + routes[i-1]);
         }
         System.out.println("Chose a Route:-");
 
         int choice;
-        choice = sc.nextInt();
+        choice = sc.nextInt() - 1;
         Car[] cars = new Car[10];
         cars[0]  = new Car("Toyota Camry",      4, routes[choice]);
         cars[1]  = new Car("Honda Civic",       3, routes[choice]);
